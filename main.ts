@@ -39,3 +39,22 @@ for (let value of tiles.getTilesByType(sprites.castle.rock2)) {
     tiles.setTileAt(value, sprites.castle.tileGrass1)
     tiles.placeOnTile(mySprite, value)
 }
+let manneke = sprites.create(img`
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . e e e . . . . . . . 
+    . . . . . . f 3 e . . . . . . . 
+    . . . . . 3 3 3 e . . . . . . . 
+    . . . . . . 3 3 . . . . . . . . 
+    . . 3 3 8 8 8 8 8 8 3 3 . . . . 
+    . . . . 8 8 8 8 8 8 . 3 . . . . 
+    . . . . . 8 8 8 8 . . . . . . . 
+    . . . . . 8 8 8 8 . . . . . . . 
+    . . . . . . c c c . . . . . . . 
+    . . . . . . e e e . . . . . . . 
+    . . . . . e e . e e . . . . . . 
+    . . . . f f f . f f f . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, SpriteKind.Player)
+controller.moveSprite(manneke, 100, 100)
